@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IdentityController!{% endblock %}
+
+{% block body %}
+<section class="articles">
+
+{% for Identity in identities %}
+
+<h2> Personne 1 </h2>
+<a href="{{ path('show') }}" clas="btn btn-primary"> voir la description </a>
+
+{% endfor %}
+</section>
+
+{% endblock %}
